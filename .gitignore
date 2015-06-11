@@ -1,0 +1,17 @@
+dist/*
+dist/**/*
+.DS_Store
+log/*
+config.json
+.cabal-sandbox/*
+cabal.sandbox.config
+setenv.sh
+*.aux
+*.hp
+*.prof
+*.ps
+generate-customers
+apply-rules
+populate-product-rules
+populate-products
+populate-rules
