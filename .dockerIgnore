@@ -5,4 +5,5 @@ log
 setenv.sh
 cabal.sandbox.config
 .cabal-sandbox
+server
 

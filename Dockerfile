@@ -2,7 +2,7 @@ FROM haskell:7.8
 # FROM darinmorrison/haskell
 
 MAINTAINER Alex Babkin <ababkin@gmail.com>
-ENV APP xds-downloader
+ENV APP swift-server
 
 RUN apt-get update -y && \
     apt-get install -y libssl-dev libghc-crypto-dev ca-certificates && \

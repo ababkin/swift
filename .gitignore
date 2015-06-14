@@ -10,8 +10,5 @@ setenv.sh
 *.hp
 *.prof
 *.ps
-generate-customers
-apply-rules
-populate-product-rules
-populate-products
-populate-rules
+server
+stress-loader

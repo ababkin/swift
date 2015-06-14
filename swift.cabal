@@ -1,0 +1,66 @@
+name:                swift
+version:             0.1.0.0
+description:         Ad serving platform
+license:             AllRightsReserved
+author:              Alex Babkin
+maintainer:          ababkin@gmail.com
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable swift-server
+  hs-source-dirs: src
+  main-is:        Server.hs
+  ghc-options:    
+    -static 
+    -Wall 
+    -threaded 
+    -O2
+    -- -rtsopts
+    -- "-with-rtsopts=-N"
+  buildable: True
+  build-depends:
+      base
+    , text
+    , mtl
+    , transformers
+    , aeson
+    , bytestring
+    , containers
+    , aws
+    , vector
+    , either-unwrap
+    , scotty
+    , wai-extra
+    , http-types
+    , MonadRandom
+    , random
+    , array
+    , time
+    , old-locale
+    , unordered-containers
+
+executable stress-loader 
+  hs-source-dirs: src
+  main-is:        StressLoader.hs
+  ghc-options:    
+    -static 
+    -Wall 
+    -threaded 
+    -O2
+    -- -rtsopts
+    -- "-with-rtsopts=-N"
+  buildable: True
+  build-depends:
+      base
+    , text
+    , mtl
+    , transformers
+    , aeson
+    , bytestring
+    , containers
+    , MonadRandom
+    , random
+    , time
+    , old-locale
+    , wreq
+    , lens
